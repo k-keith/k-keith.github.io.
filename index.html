@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>Home</title>
+</head>
+<body>
+ 
+    
+    <!--content-->
+   <div class="navscroll">
+    <nav>
+      <div class="title">
+          <h4> Merimeta Parking </h4>
+      </div>
+      
+      <ul class="navlinks">
+    
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+        
+        <a href="">
+          <P>Login <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+        </a>
+        
+        <ul>
+          <li><a href="guardlogin.php">Guard</a></li>
+          <li><a href="admin/adminlogin.php">Admin</a></li>
+        </ul>
+      </li>
+      </ul>
+      <div class="mobile">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+  </nav>
+  </div>
+  <script src="carproj.js"></script>
+   
+  <!--main body content-->
+    <div id="bodycontent">
+  
+    <h1>Welcome To Merimeta Parking </h1>
+    <p>For the best customer parking services offered, you drive we park.</p>
+
+
+    <div id="content">
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <img src="john-matychuk-yvfp5YHWGsc-unsplash.jpg" style="width: 100%;">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="car-park-960796_1920.jpg" style="width:100%;">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="pexels-carl-newton-2280148.jpg" style="width: 100%;">
+      </div>
+      
+     
+      
+      </div>
+      
+              
+      <div style="text-align:center;padding: 15px;">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+</div>
+
+  
+
+<div class="servicecont">  
+  <h2>What We Offer</h2>
+
+  <div class="row">
+    <div class="column">
+
+      <div class="card">
+        
+                <h2>Security Services</h2>
+                <p>Security is our main objective while providing parking services. the premises are under 24/7 surveillance. </p>
+      </div>
+      </div>
+
+  
+    <div class="column">
+      <div class="card">
+        
+                 <h2>Managerial Services</h2>
+                 <p>We take much pride in the quality of softwares we have that enable ease of managing user's data without a compromise </p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        
+                <h2>Customer Services</h2>
+                <p>As Merimeta Parking we do hold dear the saying customer always comes first.</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+       
+                <h2>Data Management</h2>
+                <p>We take much pride in the quality of softwares we have that enable ease of managing user's data without a compromise </p>
+               
+      </div>
+    </div>
+</div>
+  </div>
+<div class="servicebtn">
+  <a href="service.php"><button type="button"> <span></span> Read More</button></a>
+</div>
+
+</div>
+  <style>
+.servicecont h2 
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.2px;
+  color: rgb(20, 18, 18);
+}
+    /* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.row 
+{
+  margin: 0 -5px;
+  justify-content: center;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  justify-content: center;
+  height: 280px;
+}
+.card h2
+{
+  margin-bottom: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(20, 18, 18);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.servicebtn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ button
+{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  justify-content: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  color: #fff;
+  background: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+button:hover
+{
+
+background: teal;
+
+}
+
+  </style>
+ 
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+   
+
+    
+
+    <!--Footer-->
+    <div id="footer">
+        <div class="maincontent">
+            
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>We are a recognized parking company trusted with delvering best of services to our esteemed customers. <br> Our services not only entail in managing parking slots but also provision of security to our
+                        customers vehicles.
+                    </p>
+                  <div class="social">
+                    <a href="#"><span class="fa fa-facebook-f"></span></a>
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-instagram"></span></a>
+                    <a href="#"><span class="fa fa-google-plus"></span></a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="center box">
+                <h2>Quick Links</h2>
+                <div class="content">
+                  <div class="quicklinks">
+                    <ul class="menu">
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="t&c.html">Terms & Conditions</a></li>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+        <div class="right box">
+            <h2>Address</h2>
+            <div class="content">
+              <div class="location">
+                <span class="fa fa-map-marker"></span>
+                <span class="text">Diani, Kwale</span>
+              </div>
+              <div class="phone">
+                <span class="fa fa-phone"></span>
+                <span class="text">+254-712345678</span>
+              </div>
+              <div class="email">
+                <span class="fa fa-envelope"></span>
+                <span class="text">kelona@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+        <div class="bottom">
+            <center>
+              <p style="letter-spacing: 1.8px; font-size: 17px;font-weight: 300;color: #fff;">
+                  &copy; Merimeta parking 2021 All Rights Reserved.
+              </p>
+            </center>
+          </div>
+    </div>
+    
+</body>
+</html>
